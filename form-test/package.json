@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "json-server --watch ./db/form.json & vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/font": "^5.9.55",
     "@vue/composition-api": "^1.0.4",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
